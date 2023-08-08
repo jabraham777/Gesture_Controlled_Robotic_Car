@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Joel A. | Monroe Township High School, NJ | Mechanical/Software Engineering | Incoming Junior
 
-![Profile Picture](GitHubProfilePic.png)
+![Controller Schematic](GitHubProfilePic.png)
   
 # Final Milestone
 
