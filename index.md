@@ -21,17 +21,24 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
+For my second milestone, I was able to come away with two paired bluetooth modules and a configured controller:
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+- What needs to be completed before your final milestone
+
+# Code for bluetooth connections
+Here is the basic code for my car (Arduino Uno).
+
+```c++
+
+```
 
 # Final Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RnTC0cEu_lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
+For my final milestone, I was able to produce a fully functional product :
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
@@ -241,20 +248,16 @@ void determineGesture()
 Below are the replicatable schematics of my car and controller:
 
 ![Car Schematic](CarSchematic.jpg)
+
 Above you can see the attatchments between the battery pack, motors, motor driver, and Arduino Uno. Power is provided to the motor driver through a battery pack placed on the car. The motors are connected to each other through jumper wires, which will allow for a minimal amount of wires to be attatched to the terminals of the motor driver. Rather than having 2 wires in each terminal, energy can be effeciently transferred from the motor driver, through one motor, and into the second motor on each side of the car. Furthermore, the motor driver is connected to th Arduino Uno which is then linked to the bluetooth module with the mediation of a breadboard. 
 
+
 ![Controller Schematic](ControllerSchematic.png)
-Aove you can see the connctions between the Arduino Micro, bluetooth module, battery pack, and accelerometer. All the parts are powerd by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the contorller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the bluetooth module that can send the values to the car in order to move in the specified direction. 
 
-# Code
-Here is the basic code for my car (Arduino Uno).
-
-```c++
-
-```
+Above you can see the connctions between the Arduino Micro, bluetooth module, battery pack, and accelerometer. All the parts are powerd by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the contorller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the bluetooth module that can send the values to the car in order to move in the specified direction. 
 
 # Bill of Materials
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
