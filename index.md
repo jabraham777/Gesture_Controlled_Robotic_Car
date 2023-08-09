@@ -1,5 +1,5 @@
 # Gesture Controlled Robotic Car
-I have been working to make a gesture controlled rover. After hours of concentrated effort, I was able to create a robotic car that can move according to the movement of one's hand. I loved where the two worlds of physical engineering and software met to create a versatile and unique rover. This project has furthered my passion in the field as I have now gained a new understanding and appreciation of circuitry, motors, and coding. My biggest challenges were understanding the concepts of energy transfer, breadboarding, and soldering, but once I mastered the skills, creating a functional product was far easier. 
+I have been working to make a gesture controlled car. After hours of concentrated effort, I was able to create a robotic car that can move according to the movement of one's hand. I loved where the two worlds of physical engineering and software met to create a versatile and unique rover. This project has furthered my passion in the field as I have now gained a new understanding and appreciation of circuitry, motors, and coding. My biggest challenges were understanding the concepts of energy transfer, breadboarding, and soldering, but once I mastered the skills, creating a functional product was far easier. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -11,27 +11,72 @@ I have been working to make a gesture controlled rover. After hours of concentra
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RnTC0cEu_lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- Chasies, motors, motor drivers, battery packs, batteries, screws, power and ground cables, Arduino, breadboard
-- Without using any code, the rover is able to transfer energy from the batteries in order to move the wheels forward.
-- Had to reposition the motors to have the copper pads facing outward, consolidation of wires, and wire configuration
-- Will upload code to the Arduino and Arduino micro. Must connect Bluetooth to the handpiece and makes sure Bluetooth and accelerometer are correctly connected to the Arduino micro.  
+For my first milestone, I ensured that all my parts were working and came away with a working piece of hardware:
+- Materials: Chassis, motors, motor drivers, battery packs, batteries, screws, power and ground cables, Arduino, breadboard
+- Without using any code, the rover is able to transfer energy from the batteries in order to move the wheels forward
+- Had to reposition the motors to have the copper pads facing outward
+- Consolidated wires going into my motor driver by wiring the two motors together and only having one set of wires going into the motor driver terminals
+- Will upload code to the Arduino and Arduino micro. Must connect Bluetooth to the handpiece and makes sure Bluetooth and the accelerometer are accurately connected to the Arduino micro.  
 
 # Second Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For my second milestone, I was able to come away with two paired bluetooth modules and a configured controller:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone
+For my second milestone, I was able to come away with two paired Bluetooth modules and a configured controller:
+- Materials: Bluetooth module, breadboard, Arduino Micro, and Accelerometer
+- I configured my transmitter controller by connecting my Arduino Micro and Bluetooth module via breadboard wiring
+- The software aspect of this began with making code that would allow for transmitting and receiving signals between the Arduino Uno and Micro. I knew both Bluetooth modules were connected after the AT commands were plugged in and words could be sent and received on both serial monitors.  
+- The most difficult part of the whole project was synching both of my Bluetooth modules. It took me about 3 days to recheck all of my wire configurations and I finally got it to sync after completely redoing my controller. 
+- My final milestone will require a new set of code that takes the values from the accelerometer and interprets them to make the car move in the specified direction
 
 # Code for bluetooth connections
-Here is the basic code for my car (Arduino Uno).
+Here is the basic code I used to establish my Bluetooth ocnnections 
 
 ```c++
+//Code for Arduino Micro Bluetooth Connection
+void setup() {
+  Serial.begin(38400);
+  Serial1.begin(38400);
+}
 
+void loop() 
+{
+  if (Serial1.available())
+  {
+    Serial.print((char)Serial1.read());
+  }
+  if (Serial.available())
+  {
+    Serial1.write(Serial.read());
+  }
+}
+```
+```c++
+//Code for Arduino Uno Bluetooth Connection
+#include <SoftwareSerial.h>
+
+#define tx 3
+#define rx 2
+
+SoftwareSerial configBt(rx, tx);
+long tm, t, d;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(38400);
+  configBt.begin(38400); // Corrected object name to configBt
+  pinMode(tx, OUTPUT);
+  pinMode(rx, INPUT);
+}
+
+void loop() {
+  if (configBt.available()) {
+    Serial.print((char)configBt.read());
+  }
+  if (Serial.available()) {
+    configBt.write(Serial.read());
+  }
+}
 ```
 
 # Final Milestone
