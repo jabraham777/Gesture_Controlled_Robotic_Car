@@ -81,7 +81,7 @@ void loop() {
 
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RnTC0cEu_lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ukVGstyzr54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For my final milestone, I was able to code and produce a fully functional product:
 - Since my previous milestone I was able to use the synced Bluetooth modules in order to transmit and receive code based on the values presented by the accelerometer
