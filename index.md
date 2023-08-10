@@ -83,11 +83,9 @@ void loop() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RnTC0cEu_lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For my final milestone, I was able to produce a fully functional product :
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+For my final milestone, I was able to code and produce a fully functional product:
+- Since my previous milestone I was able to use the synced Bluetooth modules in order to transmit and receive code based on the values presented by the accelerometer
+- Based on the tilt of my hand, the accelerometer would produce a value that would be categorized into 5 thresholds: Forward, backward, left, right, and stop
 
 ## Code
 Here is the basic code for my car (Arduino Uno).
@@ -290,16 +288,16 @@ void determineGesture()
 ```
 
 # Schematics 
-Below are the replicatable schematics of my car and controller:
+Below are the replicable schematics of my car and controller:
 
 ![Car Schematic](CarSchematic.jpg)
 
-Above you can see the attatchments between the battery pack, motors, motor driver, and Arduino Uno. Power is provided to the motor driver through a battery pack placed on the car. The motors are connected to each other through jumper wires, which will allow for a minimal amount of wires to be attatched to the terminals of the motor driver. Rather than having 2 wires in each terminal, energy can be effeciently transferred from the motor driver, through one motor, and into the second motor on each side of the car. Furthermore, the motor driver is connected to th Arduino Uno which is then linked to the bluetooth module with the mediation of a breadboard. 
+Above you can see the attachments between the battery pack, motors, motor driver, and Arduino Uno. Power is provided to the motor driver through a battery pack placed on the car. The motors are connected to each other through jumper wires, which will allow for a minimal amount of wires to be attached to the terminals of the motor driver. Rather than having 2 wires in each terminal, energy can be efficiently transferred from the motor driver, through one motor, and into the second motor on each side of the car. Furthermore, the motor driver is connected to the Arduino Uno which is then linked to the Bluetooth module with the mediation of a breadboard. 
 
 
 ![Controller Schematic](ControllerSchematic.png)
 
-Above you can see the connctions between the Arduino Micro, bluetooth module, battery pack, and accelerometer. All the parts are powerd by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the contorller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the bluetooth module that can send the values to the car in order to move in the specified direction. 
+Above you can see the connections between the Arduino Micro, Bluetooth module, battery pack, and accelerometer. All the parts are powered by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the controller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the Bluetooth module that can send the values to the car in order to move in the specified direction. 
 
 # Bill of Materials
 
