@@ -5,7 +5,7 @@ I have been working to make a gesture controlled car. After hours of concentrate
 |:--:|:--:|:--:|:--:|
 | Joel A. | Monroe Township High School, NJ | Mechanical/Software Engineering | Incoming Junior
 
-![Controller Schematic](GitHubProfilePic.png)
+![Controller Schematic](GitHubPic.jpg)
 
 # First Milestone
 
