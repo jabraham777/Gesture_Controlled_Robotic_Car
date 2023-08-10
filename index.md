@@ -29,8 +29,8 @@ For my second milestone, I was able to come away with two paired Bluetooth modul
 - The most difficult part of the whole project was synching both of my Bluetooth modules. It took me about 3 days to recheck all of my wire configurations and I finally got it to sync after completely redoing my controller. 
 - My final milestone will require a new set of code that takes the values from the accelerometer and interprets them to make the car move in the specified direction
 
-# Code for bluetooth connections
-Here is the basic code I used to establish my Bluetooth ocnnections 
+# Code for Bluetooth connections
+Here is the basic code I used to establish my Bluetooth connections 
 
 ```c++
 //Code for Arduino Micro Bluetooth Connection
@@ -62,7 +62,7 @@ SoftwareSerial configBt(rx, tx);
 long tm, t, d;
 
 void setup() {
-  // put your setup code here, to run once:
+  //Put my setup code here, to run once:
   Serial.begin(38400);
   configBt.begin(38400); // Corrected object name to configBt
   pinMode(tx, OUTPUT);
@@ -336,10 +336,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Battery Holder | Power source carrier | $6.99 | <a href="https://www.amazon.com/Pack-Battery-Holder-Bundle-QTEATAK/dp/B07WY3VMNN/ref=sr_1_1_sspa?crid=3PY05FESGZNC8&keywords=battery+holders&qid=1689707792&sprefix=battery+holder%2Caps%2C150&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Amazon </a> |
 --># 
 
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Step By Step Guide]([(https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_move_by_code.html)])
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+# Referenced Sources
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+- [Step By Step Guide](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_move_by_code.html)
+- [Youtube Tutorial](https://www.youtube.com/watch?v=WoqJqC4LveI&t=451s)
+- [Example](https://arneshkumar.github.io/arneshbluestamp/)
+
