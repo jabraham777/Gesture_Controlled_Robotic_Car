@@ -36,7 +36,7 @@ For my second milestone, I was able to come away with two paired Bluetooth modul
 - My final milestone will require a new set of code that takes the values from the accelerometer and interprets them to make the car move in the specified direction
 
 # Code for Bluetooth connections
-Here is the basic code I used to establish my Bluetooth connections 
+Here is the code I used to establish my Bluetooth connections 
 
 ```c++
 //Code for Arduino Micro Bluetooth Connection
@@ -96,7 +96,7 @@ For my final milestone, I was able to code and produce a fully functional produc
 - Based on the tilt of my hand, the accelerometer would produce a value that would be categorized into 5 thresholds: Forward, backward, left, right, and stop
 
 ## Code
-Here is the basic code for my car (Arduino Uno).
+Here is the code for my car (Arduino Uno).
 
 ```c++
 //Code for the car
