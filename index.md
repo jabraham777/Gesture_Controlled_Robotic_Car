@@ -27,7 +27,7 @@ For my first milestone, I ensured that all my parts were working and came away w
 # Second Milestone
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8k7HJ021AYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UCi6KIRqYLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 For my second milestone, I was able to come away with two paired Bluetooth modules and a configured controller:
