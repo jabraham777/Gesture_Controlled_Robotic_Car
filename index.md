@@ -5,11 +5,15 @@ I have been working to make a gesture controlled car. After hours of concentrate
 |:--:|:--:|:--:|:--:|
 | Joel A. | Monroe Township High School, NJ | Mechanical/Software Engineering | Incoming Junior
 
-![Controller Schematic](GitHubPic.jpg)
+<p align="center">
+![Profile Pic](GitHubPic.jpg)
+</p>
 
 # First Milestone
 
+<div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RnTC0cEu_lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 For my first milestone, I ensured that all my parts were working and came away with a working piece of hardware:
 - Materials: Chassis, motors, motor drivers, battery packs, batteries, screws, power and ground cables, Arduino, breadboard
@@ -20,7 +24,9 @@ For my first milestone, I ensured that all my parts were working and came away w
 
 # Second Milestone
 
+<div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8k7HJ021AYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 For my second milestone, I was able to come away with two paired Bluetooth modules and a configured controller:
 - Materials: Bluetooth module, breadboard, Arduino Micro, and Accelerometer
@@ -81,7 +87,9 @@ void loop() {
 
 # Final Milestone
 
+<div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ukVGstyzr54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 For my final milestone, I was able to code and produce a fully functional product:
 - Since my previous milestone I was able to use the synced Bluetooth modules in order to transmit and receive code based on the values presented by the accelerometer
@@ -290,12 +298,15 @@ void determineGesture()
 # Schematics 
 Below are the replicable schematics of my car and controller:
 
+<p align="center">
 ![Car Schematic](CarSchematic.jpg)
+</p>
 
 Above you can see the attachments between the battery pack, motors, motor driver, and Arduino Uno. Power is provided to the motor driver through a battery pack placed on the car. The motors are connected to each other through jumper wires, which will allow for a minimal amount of wires to be attached to the terminals of the motor driver. Rather than having 2 wires in each terminal, energy can be efficiently transferred from the motor driver, through one motor, and into the second motor on each side of the car. Furthermore, the motor driver is connected to the Arduino Uno which is then linked to the Bluetooth module with the mediation of a breadboard. 
 
-
+<p align="center">
 ![Controller Schematic](ControllerSchematic.png)
+</p>
 
 Above you can see the connections between the Arduino Micro, Bluetooth module, battery pack, and accelerometer. All the parts are powered by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the controller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the Bluetooth module that can send the values to the car in order to move in the specified direction. 
 
