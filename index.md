@@ -301,13 +301,13 @@ void determineGesture()
 Below are the replicable schematics of my car and controller:
 
 <p align="center">
-![Car Schematic](CarSchematic.jpg)
+<img src="CarSchematic.jpg">
 </p>
 
 Above you can see the attachments between the battery pack, motors, motor driver, and Arduino Uno. Power is provided to the motor driver through a battery pack placed on the car. The motors are connected to each other through jumper wires, which will allow for a minimal amount of wires to be attached to the terminals of the motor driver. Rather than having 2 wires in each terminal, energy can be efficiently transferred from the motor driver, through one motor, and into the second motor on each side of the car. Furthermore, the motor driver is connected to the Arduino Uno which is then linked to the Bluetooth module with the mediation of a breadboard. 
 
 <p align="center">
-![Controller Schematic](ControllerSchematic.png)
+<img src="ControllerSchematic.png" height="300" width="300">
 </p>
 
 Above you can see the connections between the Arduino Micro, Bluetooth module, battery pack, and accelerometer. All the parts are powered by an external battery pack and are compactly put together on a mini breadboard. The accelerometer gets its values based on the tilt of the controller and then sends them to the Arduino Micro. The Micro then electrically sends the values to the Bluetooth module that can send the values to the car in order to move in the specified direction. 
