@@ -1,5 +1,6 @@
 # Gesture Controlled Robotic Car
-I have been working to make a gesture controlled car. After hours of concentrated effort, I was able to create a robotic car that can move according to the movement of one's hand. I loved where the two worlds of physical engineering and software met to create a versatile and unique rover. This project has furthered my passion in the field as I have now gained a new understanding and appreciation of circuitry, motors, and coding. My biggest challenges were understanding the concepts of energy transfer, breadboarding, and soldering, but once I mastered the skills, creating a functional product was far easier. 
+  I have been working to make a gesture controlled car. After hours of concentrated effort, I was able to create a robotic car that can move according to the movement of one's hand. I loved where the two worlds of physical engineering and software met to create a versatile and unique rover. 
+  This project has furthered my passion in the field as I have now gained a new understanding and appreciation of circuitry, motors, and coding. My biggest challenges were understanding the concepts of energy transfer, breadboarding, and soldering, but once I mastered the skills, creating a functional product was far easier. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
