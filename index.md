@@ -8,7 +8,7 @@ This project has furthered my passion in the field as I have now gained a new un
 | Joel A. | Monroe Township High School, NJ | Mechanical/Software Engineering | Incoming Junior
 
 <p align="center">
-![Profile Pic](GitHubPic.jpg)
+<img src="GitHubPic.jpg" alt="Profile Pic" height="250">
 </p>
 
 # First Milestone
