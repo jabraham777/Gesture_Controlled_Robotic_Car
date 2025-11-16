@@ -5,8 +5,7 @@ This project has furthered my passion in the field as I have now gained a new un
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Joel A. | Monroe Township High School, NJ | Mechanical/Software Engineering | Incoming Junior
-
+| Joel A. | United States Military Academy at West Point, NY| AI 105 Engineer | Class of 2029
 <p align="center">
 <img src="GitHubPic.jpg" alt="Profile Pic" height="250">
 </p>
